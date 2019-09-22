@@ -6,7 +6,7 @@
  *                          names of burgers they'd like to eat. Whenever a user submits a burger's name, the 
  *                          app will display the burger -- waiting to be devoured.
  * 
- *                          Code taken from MVC example inclass assignment and 
+ *                          Code taken from MVC example inclass assignment and code snippets from GitHub
  *                           
  */
 
