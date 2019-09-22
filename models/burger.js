@@ -8,14 +8,14 @@ var burger_gd = {
         });
     },
 
-    insertOne: function(name, cb) {
+    insertOne: function (name, cb) {
         orm.insertOne("burgers", [
             "burger_name", "devoured"
         ], [
             name, false
         ], cb);
     },
-    updateOne: function(id, cb) {
+    updateOne: function (id, cb) {
         var condition = "id=" + id;
         orm.updateOne("burgers", {
             devoured: true
@@ -37,6 +37,3 @@ var burger_gd = {
 // };
 //Export the database functions for the controller
 module.exports = burger_gd;
-
-
-
