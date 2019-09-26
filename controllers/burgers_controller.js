@@ -11,9 +11,9 @@ router.get("/", function(req, res) {
   });
 
   router.get("/burgers", function(req, res) {
-    // express callback response by calling burger.selectAllBurger
+    // express callback response by calling burger_GD.selectAll
     burger_GD.selectAll(function(data) {
-      // wrapper for orm.js that using MySQL query callback will return burger_data, render to index with handlebar
+      // wrapper for orm.js that using MySQL query callback will return data, render to index with handlebar
       res.render("index", { burgers: data });
     });
   });
